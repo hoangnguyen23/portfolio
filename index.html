@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Lato:wght@300;400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/reponsive.css">
+</head>
+
+<body>
+    <div class="grid">
+        <header>
+            <div class="header__container">
+                <div class="header__logo">
+                    <img src="./assets/img/logo.svg" alt="" class="logo-img">
+                </div>
+
+                <div class="header-right">
+                    <button class="menu-toggle" aria-label="Toggle menu">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <nav class="header__navbar">
+                        <ul class="header__navbar-list">
+                            <li class="header__navbar-item active">Home</li>
+                            <li class="header__navbar-item">About</li>
+                            <li class="header__navbar-item">Projects</li>
+                            <li class="header__navbar-item">Services</li>
+                            <li class="header__navbar-item">Contact</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <section id="home" class="tab-content hero active">
+            <div class="badge">
+                <i class="fa-solid fa-circle circle-icon"></i>
+                <span><em>AVAILABLE FOR WORK</em></span>
+            </div>
+            <h1 class="hero__title">Xin chào!</h1>
+            <h2 class="hero__subtitle">
+                <span class="typing-wrapper">
+                    <span id="typing"></span>
+                </span>
+            </h2>
+        </section>
+
+        <section id="about" class="tab-content about-section">
+            <div class="section__contain">
+                <h1 class="section__heading">ABOUT</h1>
+                <div class="about-section__detail">
+                    <div class="about-section__detail-left">
+                        <img src="./assets/img/avatar.jpg" alt="">
+                    </div>
+                    <div class="about-section__detail-right">
+                        <p>
+                            Mình là Hoàng, sinh viên năm 3, ngành Công nghệ Thông tin tại Đại học công nghệ Tp.HCM.
+                            <br> <br>
+                            Hiện tại, mình đang tập trung củng cố kiến thức nền tảng về lập trình, cấu trúc dữ liệu,
+                            giải
+                            thuật
+                            và phát triển phần mềm. Mình đã làm quen với các ngôn ngữ như C/C++, Java và đang học thêm
+                            về
+                            lập trình web với HTML, CSS, JavaScript.
+                            <br> <br>
+                            Mình yêu thích việc xây dựng các sản phẩm có thể giải quyết vấn đề thực tế và mong muốn trở
+                            thành một developer có tư duy logic tốt, có khả năng học nhanh và làm việc nhóm hiệu quả.
+                            <br> <br>
+                            Mình luôn tìm kiếm cơ hội để thực hành nhiều hơn thông qua các dự án nhỏ, hoạt động CLB,
+                            hoặc
+                            thực tập sắp tới.
+                        </p>
+                        <button class="btn btn--primary cv-btn">
+                            <i class="fa-solid fa-arrow-down"></i>
+                            Tải CV
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="tab-content projects-section">
+            <div class="section__contain">
+                <h1 class="section__heading">PROJECTS</h1>
+                <div class="section__contain-column">
+                    <div class="projects-section__filter">
+                        <button class="projects-section__filter-btn active" data-filter="all">All</button>
+                        <button class="projects-section__filter-btn" data-filter="visual">Visual Design</button>
+                        <button class="projects-section__filter-btn" data-filter="development">Development</button>
+                        <button class="projects-section__filter-btn" data-filter="branding">Branding</button>
+                    </div>
+                    <ul class="projects-section-list">
+                        <li class="project-card" data-category="development">
+                            <div class="project-card__heading">
+                                <div class="project-card__heading-wrap">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                    <h3>Portfolio</h3>
+                                </div>
+                                <p>2025</p>
+                            </div>
+                            <img src="./assets/img/Portfolio-Img-1.png" alt="" class="project-card__img">
+                        </li>
+
+                        <li class="project-card" data-category="development">
+                            <div class="project-card__heading">
+                                <div class="project-card__heading-wrap">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                    <h3>Portfolio</h3>
+                                </div>
+                                <p>2025</p>
+                            </div>
+                            <img src="./assets/img/Portfolio-Img-2.png" alt="" class="project-card__img">
+                        </li>
+
+                        <li class="project-card" data-category="visual">
+                            <div class="project-card__heading">
+                                <div class="project-card__heading-wrap">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                    <h3>Portfolio</h3>
+                                </div>
+                                <p>2025</p>
+                            </div>
+                            <img src="./assets/img/Portfolio-Img-3.png" alt="" class="project-card__img">
+                        </li>
+
+                        <li class="project-card" data-category="visual">
+                            <div class="project-card__heading">
+                                <div class="project-card__heading-wrap">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                    <h3>Portfolio</h3>
+                                </div>
+                                <p>2025</p>
+                            </div>
+                            <img src="./assets/img/Portfolio-Img-4.png" alt="" class="project-card__img">
+                        </li>
+
+                        <li class="project-card" data-category="branding">
+                            <div class="project-card__heading">
+                                <div class="project-card__heading-wrap">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                    <h3>Portfolio</h3>
+                                </div>
+                                <p>2025</p>
+                            </div>
+                            <img src="./assets/img/Portfolio-Img-5.png" alt="" class="project-card__img">
+                        </li>
+
+                        <li class="project-card" data-category="branding">
+                            <div class="project-card__heading">
+                                <div class="project-card__heading-wrap">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                    <h3>Portfolio</h3>
+                                </div>
+                                <p>2025</p>
+                            </div>
+                            <img src="./assets/img/Portfolio-Img-6.png" alt="" class="project-card__img">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="services" class="tab-content"></section>
+        <section id="contact" class="tab-content contact-section">
+            <div class="section__contain">
+                <h1 class="section__heading">CONTACT</h1>
+                <div class="section__contain-row">
+                    <h2 class="contact-heading">Mình rất mong nhận được phản hồi từ bạn</h2>
+
+                    <form action="" class="contact-form">
+                        <div class="form-group">
+                            <label for="" class="contact-form-label">Name</label>
+                            <input type="text" class="contact-form-inp">
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="contact-form-label">Email Address</label>
+                            <input type="text" class="contact-form-inp">
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="contact-form-label">Description</label>
+                            <textarea name="" id="" class="contact-form-inp"></textarea>
+                        </div>
+                        <button class="btn btn--primary form-submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

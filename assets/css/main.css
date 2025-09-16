@@ -1,0 +1,365 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--black-color);
+}
+
+/*************/
+/* header */
+/*************/
+header {
+    margin-top: 2px;
+}
+
+.header__container {
+    width: 1240px;
+    height: 70px;
+    margin: 10px 55px 0;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    gap: 100px
+}
+
+.header__logo {
+    padding: 16px 0;
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    width: 200px;
+    height: 42px;
+}
+
+.header__navbar {
+    display: flex;
+    align-items: center;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 2.6rem;
+    background: none;
+    border: 1px solid var(--primary-color);
+    color: var(--white-color);
+    cursor: pointer;
+    margin-right: 30px;
+    padding: 8px 14px;
+    float: right;
+}
+
+.header__navbar-list {
+    list-style: none;
+    display: flex;
+    padding: 16px 0;
+}
+
+.header__navbar-item {
+    color: var(--white-color);
+    font-size: 1.6rem;
+    padding: 16px 16px;
+    cursor: pointer;
+
+    &:hover {
+        color: var(--regular-color);
+    }
+}
+
+.header__navbar-item.active {
+    color: var(--primary-color);
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* hero */
+
+.hero {
+    margin: 100px auto 0;
+    text-align: center;
+}
+
+.badge {
+    margin-bottom: 30px;
+    border: 1px solid #3D3D3D;
+    border-radius: 1.6rem;
+    display: inline-flex;
+    align-items: center;
+    padding: 2px 10px;
+}
+
+.circle-icon {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin-right: 6px;
+    padding: 4px 0;
+}
+
+.badge span {
+    font-size: 1.5rem;
+    color: var(--white-color);
+    padding: 4px 0;
+}
+
+.hero__title {
+    margin: 0;
+    font-size: 8rem;
+    font-weight: 500;
+    color: var(--white-color);
+    line-height: 9rem;
+}
+
+.hero__subtitle {
+    margin: 24px 0;
+    font-size: 6rem;
+    line-height: 7rem;
+    font-weight: 500;
+    color: var(--primary-color);
+    overflow: hidden;
+    display: inline-block;
+}
+
+#typing {
+    /* display: inline-block;
+    white-space: pre-wrap;
+    word-wrap: break-word; */
+}
+
+#typing::after {
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 1em;
+    background: var(--white-color);
+    margin-left: 6px;
+    vertical-align: baseline;
+    animation: blink 0.7s steps(1) infinite;
+}
+
+/* about */
+.about-section {
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.section__contain {
+    margin: 0 2px;
+    padding: 40px 0 140px;
+}
+
+.section__heading {
+    color: var(--white-color);
+    font-size: 16rem;
+    font-weight: 500;
+    line-height: 14rem;
+    margin: 170px 0 0 70px;
+}
+
+.about-section__detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 42px 0 0 70px;
+    gap: 150px;
+}
+
+.about-section__detail-left img {
+    width: auto;
+    height: 340px;
+    border-radius: 50%;
+
+    /* Nền trong ảnh */
+    background: white;
+
+    /* Viền + bóng nhiều lớp */
+    box-shadow:
+        /* viền trắng (trong cùng, dày nhất) + bóng nhẹ */
+        0 0 0 25px white,
+        5px 5px 15px rgba(0, 0, 0, 0.15),
+
+        /* viền regular + bóng đổ */
+        0 0 0 45px var(--regular-color),
+        8px 8px 20px rgba(0, 0, 0, 0.2),
+
+        /* viền primary (ngoài cùng) + bóng mạnh hơn */
+        0 0 0 65px var(--primary-color),
+        12px 12px 25px rgba(0, 0, 0, 0.25);
+}
+
+.about-section__detail-right {
+    margin: 48px 0;
+
+    p {
+        color: var(--white-color);
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+    }
+
+    .cv-btn {
+        margin-top: 34px;
+        border-radius: 18px;
+
+        i {
+            margin-right: 6px;
+        }
+    }
+}
+
+
+/* projects */
+.projects-section {}
+
+.section__contain-column {
+    margin: 0 70px;
+    padding: 100px 0 140px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.projects-section__filter {
+    display: flex;
+    gap: 34px;
+}
+
+.projects-section__filter-btn {
+    background: none;
+    color: var(--white-color);
+    font-size: 2.4rem;
+    border: none;
+    padding: 2px 4px;
+    margin: 4px;
+    cursor: pointer;
+
+    &:hover {
+        color: var(--regular-color);
+    }
+
+    &.active {
+        color: var(--primary-color);
+    }
+}
+
+.projects-section-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project-card {
+    list-style: none;
+    width: 590px;
+    height: 528px;
+    border: 1px solid var(--border-color);
+    border-radius: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    img {
+        width: 588px;
+        height: auto;
+        border-radius: 4%;
+    }
+}
+
+.project-card__heading {
+    color: var(--white-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 36px;
+
+    h3 {
+        font-size: 1.8rem;
+        display: inline;
+    }
+
+    p {
+        font-size: 1.6rem;
+    }
+}
+
+.project-card__heading-wrap {
+    display: flex;
+    align-items: center;
+
+    i {
+        font-size: 1.6rem;
+        margin-right: 12px;
+        color: var(--primary-color);
+    }
+}
+
+/* contact */
+.contact-heading {
+    color: var(--white-color);
+    font-size: 5rem;
+    line-height: 6rem;
+    margin: 0;
+}
+
+.section__contain-row {
+    display: flex;
+    margin: 0 70px;
+    padding: 100px 0 140px;
+    gap: 70px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 90%;
+    width: 100%;
+
+    .form-submit {
+        font-size: 1.6rem;
+        border-radius: 6px;
+        margin-top: 15px;
+        padding: 10px 0;
+    }
+}
+
+.form-group {
+    color: var(--white-color);
+    margin: 15px 0;
+
+    textarea {
+        padding: 12px;
+        width: 100%;
+        height: 220px;
+    }
+}
+
+.contact-form-label {
+    font-size: 1.6rem;
+}
+
+.contact-form-inp {
+    color: var(--white-color);
+    font-size: 1.6rem;
+    width: 100%;
+    background: #1A1A1A;
+    margin-top: 15px;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+
+    &:focus {
+        outline: 2px solid var(--primary-color);
+    }
+}

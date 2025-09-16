@@ -1,0 +1,181 @@
+/* Tablet nhỏ trở xuống */
+@media (max-width: 992px) {
+    .header__container {
+        width: 100%;
+        margin: 0 20px;
+        padding: 0 10px;
+    }
+
+    .header__navbar {
+        margin-left: auto;
+    }
+
+    .header__navbar-item {
+        font-size: 1.4rem;
+        padding: 0 10px;
+    }
+
+    .grid {
+        width: 100%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .header__container {
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+        float: right;
+
+    }
+
+    .header__navbar-list {
+        display: none;
+        flex-direction: column;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        background-color: var(--black-color);
+    }
+
+    .header__navbar-list.show {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: var(--black-color);
+        padding: 10px 0;
+    }
+
+    .header__navbar-item {
+        text-align: left;
+        padding: 12px 20px;
+
+        &.active {
+            background-color: #1A1A1A;
+        }
+    }
+
+    .header__navbar-item:first-child {
+        border-top: none;
+    }
+
+    .logo-img {
+        width: 160px;
+        height: 38px;
+    }
+
+    .hero__title {}
+
+    .hero__subtitle {
+        font-size: 4rem;
+    }
+
+    /* about */
+    .section__contain {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section__heading {
+        font-size: 8rem;
+        margin: 0 auto;
+    }
+
+    .about-section__detail {
+        flex-direction: column;
+        margin: 0 auto;
+
+        gap: 50px
+    }
+
+    .about-section__detail-left img {
+        width: auto;
+        height: 280px;
+        border-radius: 50%;
+        background: radial-gradient(circle, white 0%, var(--regular-color) 100%);
+        border: 2px solid var(--primary-color);
+        padding: 20px;
+        box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3), 2px 5px 10px var(--primary-color);
+    }
+
+    .about-section__detail-right {
+        margin: 0;
+
+        p {
+            font-size: 1.4rem;
+            line-height: 2.2rem;
+        }
+    }
+
+    /* projects */
+    .section__contain-column {
+        gap: 40px;
+    }
+
+    .projects-section__filter {
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+    }
+
+    .projects-section__filter-btn {
+        font-size: 1.6rem;
+    }
+
+    .projects-section-list {
+        gap: 20px;
+    }
+
+    .project-card {
+        width: 95%;
+        height: auto;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .project-card__heading {
+        padding: 10px 24px;
+
+        h3 {
+            font-size: 1.6rem;
+        }
+
+        p {
+            font-size: 1.4rem;
+        }
+    }
+
+    /* contact */
+    .contact-heading {
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+
+    .section__contain-row {
+        flex-direction: column;
+    }
+}
+
+
+/* Mobile nhỏ */
+@media (max-width: 480px) {
+    .hero__title {
+        font-size: 3.2rem;
+    }
+
+    .hero__subtitle {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+}
